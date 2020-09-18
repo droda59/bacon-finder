@@ -33,17 +33,21 @@ Controllers would call repositories and services to get what it needs to do the 
 I chose to start from the actor's costars instead of Kevin Bacon, however it would have the same results. 
 We search a complete level at a time. For Christian Bale, for example, we would get all his costars and look for KB in there. If he's not found, we get all of Christian Bale's costars' costars in the second level, and look for KB. 
 In a tree it would look like this, where the numbers indicate the loop iteration: 
+```
           0
     1          1
  2     2     2     2
 3 3   3 3   3 3   3 3
+```
 
 The other way would be to go deep into each movie, finding KB somewhere along the way. I thought this to be too heavy and long, because you still have to go through everything to make sure that the result is the most optimal. 
-In a tree it would look like this, where the numbers indicate the loop iteration: 
+In a tree it would look like this, where the numbers indicate the loop iteration
+```
           0
     1           8
  2     5     9     12
 3 4   6 7  10 11  13 14
+```
 
 ## Possible improvements
 
